@@ -35,17 +35,17 @@ Follow these instructions to set up the project on your local machine.
 
 sudo docker build -t mail-service .
 
-sudo docker run -d --network host --name myapp-mail-service \
-  -e RABBITMQ_URL=amqp://admin:111111@localhost:5672/ \
+sudo docker run -d --network host --name cenaapp-mail-service \
+  -e RABBITMQ_URL=amqp://admin:si1992naAV@localhost:5672/ \
   -e RABBITMQ_NAME=email_exchange \
   -e RABBITMQ_TYPE=direct \
   -e RABBITMQ_KEY=email_routing \
   -e RABBITMQ_QUEUE=email_queue \
   -e RABBITMQ_TTL=3600000 \
-  -e SMTP_SERVER=smtp.mydomain.com \
+  -e SMTP_SERVER=smtp1.s.ipzmarketing.com \
   -e SMTP_PORT=587 \
-  -e SMTP_USERNAME=abcd \
-  -e SMTP_PASSWORD=1234 \
-  -e SENDER_EMAIL=support@mydomain.com \
+  -e SMTP_USERNAME=dojmroxgaokw \
+  -e SMTP_PASSWORD=dBcxr8F4-ZwE \
+  -e SENDER_EMAIL=support@amonproject.com \
   mail-service
 
